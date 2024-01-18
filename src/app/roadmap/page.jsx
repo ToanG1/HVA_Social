@@ -1,5 +1,5 @@
 import styles from './page.module.scss';
 
 export default function Roadmap() {
-  return <h1 className={styles.title}>Hello roadmap</h1>;
+  return <h1 className={styles.roadmapContainer}>Hello roadmap</h1>;
 }
