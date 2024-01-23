@@ -7,10 +7,9 @@ export default function Home() {
   return (
     <>
       <SideNav />
-      <h1 className={styles.homeContainer}>Hello world updated</h1>
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-        <PostItem key={i} />
-      ))}
+      <div className={styles.homeContainer}>{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+        <PostItem key={i} /> 
+      ))}</div>
     </>
   );
 }
