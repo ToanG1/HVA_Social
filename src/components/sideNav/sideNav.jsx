@@ -1,4 +1,3 @@
-'use client';
 import styles from './SideNav.module.scss';
 
 import Link from 'next/link';

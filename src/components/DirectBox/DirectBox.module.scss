@@ -1,0 +1,112 @@
+@use '../../style/color.scss';
+.directBox {
+  height: 100%;
+  width: 100%;
+
+  .defaultDirectBox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 150px;
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+  .directBox {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .directBoxHeader {
+      width: calc(100% - 30px);
+      height: 71px;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid lightgray;
+      div {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+    .directBoxBody {
+      width: calc(100% - 30px);
+      height: calc(100% - 200px);
+      overflow-y: scroll;
+      padding: 15px;
+      position: relative;
+      .directItemOwner {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        p {
+          max-width: 70%;
+          background-color: color.$main-color !important;
+          color: color.$secondary-text;
+        }
+      }
+      .directItem {
+        display: flex;
+        margin-bottom: 15px;
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        p {
+          max-width: 70%;
+          width: fit-content;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 12px;
+          border-radius: 15px;
+          background-color: color.$main-gray-bg;
+          font-size: 14px;
+        }
+      }
+    }
+    .directInputBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(94% - 40px);
+      height: 60px;
+      line-height: 60px;
+      position: absolute;
+      bottom: 20px;
+      left: 3%;
+      right: 3%;
+      border: 1px solid lightgray;
+      border-radius: 30px;
+      padding-inline: 20px;
+      input {
+        width: 90%;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        color: color.$main-color;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}

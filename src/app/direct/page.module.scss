@@ -1,6 +1,7 @@
 @use '../../style/color.scss';
 .directContainer {
   padding-left: 250px;
+  display: flex;
   .directSideBar {
     height: calc(100vh - 60px);
     width: 300px;
@@ -11,8 +12,6 @@
       display: flex;
       justify-content: space-between;
       margin: 15px 0;
-      .username {
-      }
     }
     .directList {
       width: 100%;
@@ -60,5 +59,10 @@
         }
       }
     }
+  }
+
+  .directBoxContainer {
+    height: 100vh;
+    width: calc(100% - 300px);
   }
 }
