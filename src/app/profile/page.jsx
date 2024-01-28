@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './page.module.scss';
-import SideNav from '@/components/SideNav/sideNav';
+import SideNav from '@/components/SideNav/SideNav';
 
 function removeActive() {
   const buttons = document.querySelectorAll('button');

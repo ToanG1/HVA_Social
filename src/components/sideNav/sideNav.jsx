@@ -31,7 +31,7 @@ export default function SideNav() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/explore">
             <FontAwesomeIcon icon={faCompass} style={{ fontSize: '28px' }} />
             Explore
           </Link>
@@ -52,7 +52,7 @@ export default function SideNav() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/direct">
             <FontAwesomeIcon
               icon={faFacebookMessenger}
               style={{ fontSize: '28px' }}
@@ -65,7 +65,7 @@ export default function SideNav() {
           Create
         </li>
         <li>
-          <Link href="/">
+          <Link href="/profile">
             <Image src={defaultImg} alt="profile" />
             Profile
           </Link>
